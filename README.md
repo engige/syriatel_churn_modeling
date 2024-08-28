@@ -1,3 +1,5 @@
+![header](images/telecom_churn.png)
+
 # SyriaTel Customer Churn Modeling Project
 
 **Author:** Joseph Ngige
