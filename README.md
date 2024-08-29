@@ -18,7 +18,19 @@ The curated dataset provided contains information about SyriaTel customers and i
 
 ## Data Preparation
 
-The data preparation process began with an Exploratory Data Analysis (EDA) to examine the features, target variable, and their relationships. This analysis revealed an imbalance in the churn class, with significantly fewer customers labeled as churned (14.49%). This imbalance would need to be addressed through appropriate techniques during modeling to check if it improves model performance. It also highlighted key trends, such as the strong correlation between high daytime usage, frequent customer service calls, and increased churn likelihood. Gradual decline from the highest to the lowest churn rates indicated that there is significant variation in churn across different states.
+The data preparation process began with an Exploratory Data Analysis (EDA) to examine the features, target variable, and their relationships. This analysis revealed an imbalance in the churn class, with significantly fewer customers labeled as churned (14.49%). The imbalance would need to be addressed through appropriate techniques during modeling to check if it improves model performance. It also highlighted key trends, such as the strong correlation between high daytime usage, frequent customer service calls, and increased churn likelihood. Gradual decline from the highest to the lowest churn rates indicated that there is significant variation in churn across different states.
+
+***Figure 1: Churn Countplot***
+
+![churn_count](images/churn_distribution.png)
+
+*The count plot shows that the dataset is imbalanced, with fewer customers labeled as churned (483) compared to those who did not churn (2,850).*
+
+***Figure 2: Churn Boxplot***
+
+![churn_boxplots](images/churn_boxplots.png)
+
+*The boxplot reveals that customers who churn tend to have a higher median customer service calls and total day minutes usage.*
 
 Based on the insights, irrelevant and redundant columns were removed, including phone number, area code, and various charge and call-related features, to prevent multicollinearity and enhance model accuracy. The dataset was then split into training and test sets (80:20) before data preprocessing to avoid data leakage. Categorical variables were transformed to numerical variables to ensure that all features were represented in a way that would maximize model's predictive power.
 
@@ -26,12 +38,23 @@ Based on the insights, irrelevant and redundant columns were removed, including 
 
 An iterative modeling approach was employed, starting with basic models and gradually increasing complexity to enhance performance. The initial model, a simple Logistic Regression, struggled to accurately identify customers likely to churn, prompting the application of the Synthetic Minority Over-sampling Technique (SMOTE) in Model 2 to address churn class imbalance. This significantly improved the model’s ability to detect churners, a crucial factor for business decision-making, though it introduced more false positives (customers that the model predicts will leave, but in reality stay). Subsequent models (Models 3, 4 & 5) focused on adjusting model rules and exploring alternative algorithms, such as Decision Trees, to further refine predictions.
 
+***Figure 3: Model Score Summary***
+
+![model_scores](images/model_scores.png)
+
+![auc_roc](images/auc_roc.png)
 
 ## Evaluation
 
 The evaluation focused on comparing key metrics like Accuracy, Precision, Recall, F1-Score, and the Area Under the ROC Curve (AUC) to determine the best model for predicting customer churn. While Accuracy provides an overall measure of correct predictions, it can be misleading in imbalanced datasets. Thus, Recall was prioritized as it is crucial for identifying most customers who are likely to churn, while Precision ensures accuracy in those predictions. The F1-Score offers a balanced measure of Precision and Recall, and AUC indicates the model’s ability to distinguish between churners and non-churners.
 
 After iteratively testing and refining several models, the Tuned Decision Tree (Model 5) emerged as the best performer. By effectively balancing complex, non-linear relationships in the data, and through careful model rules tuning, Model 5 achieved the highest accuracy (91.75%) and AUC score (86%). This model excelled in identifying churners with a Recall of 72.28% and a Precision of 87.15%, making it the most reliable tool for predicting customer churn and supporting SyriaTel's customer retention strategies.
+
+***Figure 4: Model 5 Scores***
+
+![model5_scores](images/model5_scores.png)
+
+![model5_auc](images/model5_auc.png)
 
 ## Conclusion
 
@@ -50,3 +73,19 @@ The analysis and modeling conducted in this project have successfully identified
 * **Explore Ensemble Methods:** Investigate ensemble methods like Random Forest or Gradient Boosting to potentially improve recall and overall model robustness.
 
 By following these recommendations, SyriaTel can effectively reduce customer churn, boost loyalty, and increase long-term revenue.
+
+## For More Information
+
+See the full analysis in the [Jupyter Notebook](./index.ipynb) or review this [Presentation](./presentation.pdf).
+
+For additional info, contact Joseph Ngige at [elngige@gmail.com](mailto:elngige@gmail.com)
+
+## Repository Structure
+
+```
+├── README.md                                                 <- The top-level README for reviewers of this project
+├── index.ipynb                                               <- Narrative documentation of analysis in Jupyter notebook
+├── presentation.pdf                                          <- PDF version of project presentation
+├── data                                                      <- Sourced externally
+└── images                                                    <- Sourced externally and generated from code
+```
