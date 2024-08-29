@@ -58,7 +58,7 @@ After iteratively testing and refining several models, the Tuned Decision Tree (
 
 ## Conclusion
 
-The analysis and modeling conducted in this project have successfully identified an optimal approach for predicting customer churn for SyriaTel. The deployment of Model 5 can have a significant impact on SyriaTel’s customer retention strategies. By accurately identifying customers at risk of churning, SyriaTel can tailor its marketing and customer service efforts to these individuals, offering targeted incentives or personalized service improvements to retain them. This targeted approach not only helps in reducing customer turnover but also optimizes resource allocation, ensuring that efforts are focused where they are most likely to have a positive impact.
+The analysis and modeling conducted in this project have successfully identified an optimal approach for predicting customer churn for SyriaTel. The deployment of Model 5 can have a significant impact on SyriaTel’s customer retention strategies. By accurately identifying customers at risk of churning, SyriaTel can tailor its marketing and customer service efforts to these individuals, offering targeted incentives or personalized service improvements to retain them. This targeted approach not only helps in reducing customer turnover but also optimizes resource allocation, boost loyalty, and increase long-term revenue.
 
 ### Recommendations & Next Steps:
 
@@ -72,7 +72,6 @@ The analysis and modeling conducted in this project have successfully identified
 
 * **Explore Ensemble Methods:** Investigate ensemble methods like Random Forest or Gradient Boosting to potentially improve recall and overall model robustness.
 
-By following these recommendations, SyriaTel can effectively reduce customer churn, boost loyalty, and increase long-term revenue.
 
 ## For More Information
 
@@ -86,6 +85,6 @@ For additional info, contact Joseph Ngige at [elngige@gmail.com](mailto:elngige@
 ├── README.md                                                 <- The top-level README for reviewers of this project
 ├── index.ipynb                                               <- Narrative documentation of analysis in Jupyter notebook
 ├── presentation.pdf                                          <- PDF version of project presentation
-├── data                                                      <- Sourced externally
+├── churn_data.csv                                            <- Data Sourced externally
 └── images                                                    <- Sourced externally and generated from code
 ```
