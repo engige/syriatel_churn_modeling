@@ -10,12 +10,12 @@ The goal of this project is to build a classification model that predicts whethe
 
 1. Deploy Model 5 (Tuned Decision Tree) and implement targeted retention efforts for customers that are likely to churn i.e.;
 
-    * Establish plans for high usage customers;
-    * Improve International Service;
+    * Establish plans for high usage customers,
+    * Improve International Service,
     * Enhance customer service and
     * Implement region specific approach.
 
-2. Monitor and Refine the Model, and
+2. Monitor and Refine the Model to ensure continued effectiveness, and
 3. Explore Ensemble Methods to potentially improve model performance.
 
 ## Business Understanding
