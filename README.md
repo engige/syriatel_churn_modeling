@@ -50,15 +50,15 @@ An iterative modeling approach was employed, starting with basic models and grad
 
 In Model 3, tuning focused on refining the Logistic Regression model by adjusting hyperparameters to enhance its performance. The key adjustments included finding the optimal regularization strength (`C`), which balances the model’s ability to fit the training data while avoiding overfitting. Additionally, the type of penalization (`l1` or `l2`) was selected to determine how the model simplifies itself by minimizing less important features, helping it generalize better to new data. In Model 5, the Decision Tree model was fine-tuned by controlling its complexity through hyperparameters like `max_depth`, which limits how deep the tree can grow, and `min_samples_split` and `min_samples_leaf`, which ensure that each decision is based on enough data. These adjustments helped Model 5 achieve a better balance between accuracy and robustness, making it the best-performing model.
 
+## Evaluation
+
+The evaluation focused on comparing key metrics like Accuracy, Precision, Recall, F1-Score, and the Area Under the ROC Curve (AUC) to determine the best model for predicting customer churn. While Accuracy provides an overall measure of correct predictions, it can be misleading in imbalanced datasets. Thus, Recall was prioritized as it is crucial for identifying most customers who are likely to churn, while Precision ensures accuracy in those predictions. The F1-Score offers a balanced measure of Precision and Recall, and AUC indicates the model’s ability to distinguish between churners and non-churners.
+
 ***Figure 3: Model Score Summary***
 
 ![model_scores](images/model_scores.png)
 
 ![auc_roc](images/auc_roc.png)
-
-## Evaluation
-
-The evaluation focused on comparing key metrics like Accuracy, Precision, Recall, F1-Score, and the Area Under the ROC Curve (AUC) to determine the best model for predicting customer churn. While Accuracy provides an overall measure of correct predictions, it can be misleading in imbalanced datasets. Thus, Recall was prioritized as it is crucial for identifying most customers who are likely to churn, while Precision ensures accuracy in those predictions. The F1-Score offers a balanced measure of Precision and Recall, and AUC indicates the model’s ability to distinguish between churners and non-churners.
 
 After iteratively testing and refining several models, the Tuned Decision Tree (Model 5) emerged as the best performer. By effectively balancing complex, non-linear relationships in the data, and through careful model rules tuning, Model 5 achieved the highest accuracy (91.75%) and AUC score (86%). This model excelled in identifying churners with a Recall of 72.28% and a Precision of 87.15%, making it the most reliable tool for predicting customer churn and supporting SyriaTel's customer retention strategies.
 
