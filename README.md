@@ -6,7 +6,17 @@
 
 ## Project Overview
 
-The goal of this project is to build a classification model that predicts whether a customer will soon stop doing business with SyriaTel, a telecommunications company, in order to help SyriaTel reduce churn by identifying at-risk customers and implementing targeted retention strategies. By developing a predictive model based on customer data, the project aims to classify whether a customer is likely to churn, providing valuable insights to SyriaTel's business stakeholders who are focused on minimizing customer churn to reduce revenue loss. The outcome of this project enables SyriaTel to identify at-risk customers and take proactive measures to retain them, ultimately supporting the company's efforts to maintain customer loyalty and improve profitability. Specifically, the outcome indicated that SyriaTel should 1) Establish targeted plans for high usage customers, 2) Improve International Service, 3) Enhance Customer Service and 4) Implement Region-Specific approach to customer retention.
+The goal of this project is to build a classification model that predicts whether a customer will soon stop doing business with SyriaTel, a telecommunications company, in order to help SyriaTel reduce churn by identifying at-risk customers and implementing targeted retention strategies. By developing a predictive model based on customer data, the project aims to classify whether a customer is likely to churn, providing valuable insights to SyriaTel's business stakeholders who are focused on minimizing customer churn to reduce revenue loss. The outcome of this project enables SyriaTel to identify at-risk customers and take proactive measures to retain them, ultimately supporting the company's efforts to maintain customer loyalty and improve profitability. Specifically, the outcome indicated that SyriaTel should:
+
+1. Deploy Model 5 (Tuned Decision Tree) and implement targeted retention efforts for customers that are likely to churn i.e.;
+
+    * Establish plans for high usage customers;
+    * Improve International Service;
+    * Enhance customer service and
+    * Implement region specific approach.
+
+2. Monitor and Refine the Model, and
+3. Explore Ensemble Methods to potentially improve model performance.
 
 ## Business Understanding
 
@@ -16,7 +26,7 @@ Customer churn is a critical issue for telecommunications companies like SyriaTe
 
 The curated dataset provided contains information about SyriaTel customers and includes features related to customer behavior, demographics, and service usage. The dataset consists of 3,333 entries and 21 columns with features such as account length, international plan, total day minutes, and customer service calls. The target variable is binary, indicating whether a customer has churned (True) or not (False). The dataset encompasses both numerical and categorical features, providing a comprehensive foundation for building a predictive model to identify at-risk customers.
 
-## Data Preparation
+## Data Analysis & Preparation
 
 The data preparation process began with an Exploratory Data Analysis (EDA) to examine the features, target variable, and their relationships. This analysis revealed an imbalance in the churn class, with significantly fewer customers labeled as churned (14.49%). The imbalance would need to be addressed through appropriate techniques during modeling to check if it improves model performance. It also highlighted key trends, such as the strong correlation between high daytime usage, frequent customer service calls, and increased churn likelihood. Gradual decline from the highest to the lowest churn rates indicated that there is significant variation in churn across different states.
 
