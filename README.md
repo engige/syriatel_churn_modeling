@@ -97,6 +97,7 @@ For additional info, contact Joseph Ngige at [elngige@gmail.com](mailto:elngige@
 ├── README.md                                                 <- The top-level README for reviewers of this project
 ├── index.ipynb                                               <- Narrative documentation of analysis in Jupyter notebook
 ├── presentation.pdf                                          <- PDF version of project presentation
+├── jupyter_notebook.pdf                                      <- PDF version of the index.ipynb
 ├── churn_data.csv                                            <- Data Sourced externally
 └── images                                                    <- Sourced externally and generated from code
 ```
