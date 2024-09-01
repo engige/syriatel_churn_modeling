@@ -97,7 +97,8 @@ For additional info, contact Joseph Ngige at [elngige@gmail.com](mailto:elngige@
 ├── README.md                                                 <- Top-level README for reviewers of this project
 ├── index.ipynb                                               <- Narrative documentation of analysis in Jupyter notebook
 ├── presentation.pdf                                          <- PDF version of project presentation
-├── jupyter_notebook.pdf                                      <- PDF version of the index.ipynb
+├── notebook.pdf                                              <- PDF version of the index.ipynb
+├── github.pdf                                                <- The github repository pdf
 ├── churn_data.csv                                            <- SyriaTel customer churn data sourced externally
 └── images                                                    <- Sourced externally and generated from code
 ```
