@@ -94,7 +94,7 @@ For additional info, contact Joseph Ngige at [elngige@gmail.com](mailto:elngige@
 ## Repository Structure
 
 ```
-├── README.md                                                 <- The top-level README for reviewers of this project
+├── README.md                                                 <- Top-level README for reviewers of this project
 ├── index.ipynb                                               <- Narrative documentation of analysis in Jupyter notebook
 ├── presentation.pdf                                          <- PDF version of project presentation
 ├── jupyter_notebook.pdf                                      <- PDF version of the index.ipynb
